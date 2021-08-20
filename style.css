@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background:rgb(229, 234, 248);
+}
+
+body {
+  --app-width: 42rem;
+
+  max-width: var(--app-width);
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  max-width: var(--app-width);
+}
+
+.top {
+  background: white;
+  top: 0;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .04);
+}
+
+.logo {
+  height: 6.2rem;
+  padding: 1.4rem;
+}
+
+.fab {
+  padding: 1.6rem 2.2rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: .8rem;
+  bottom: 0;
+}
+
+.button {
+  border: none;
+  border-radius: .9rem;
+  background: rgb(82, 103, 255);
+  cursor: pointer;
+  box-shadow: 0 .2rem 3rem rgba(0, 0, 0, .31);
+  color: white;
+  font-weight: 700;
+}
+
+.share {
+  padding: 1.7rem;
+}
